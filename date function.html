@@ -1,0 +1,74 @@
+!DOCTYPE >
+<html>
+  <body>
+    <h1>Date_Operations</h1>
+    <button onclick="watchTime()">Show</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+      function watchTime() {
+        document.getElementById("demo").innerHTML = Date();
+        const a = new Date();
+        document.getElementById("demo1").innerHTML = a.getDate();
+        document.getElementById("demo2").innerHTML = a.getMonth();
+        document.getElementById("demo3").innerHTML = a.getFullYear();
+        document.getElementById("demo4").innerHTML = a.getTime();
+        document.getElementById("demo5").innerHTML = a.getUTCDate();
+      }
+    </script>
+  </body>
+
+
+
+  <body>
+    <h3>we are using if else</h3>
+    <p id="demo"></p>
+    <script>
+      const x = new Date().getHours();
+      let a;
+      if (x < 15) {
+        a = "hours is less than 5";
+      } else if (x > 10) {
+        a = "hour is more than 10";
+      } else {
+        a = "hour is in between 5 and 10";
+      }
+      document.getElementById("demo").innerHTML = a;
+    </script>
+  </body>
+
+
+
+  <body>
+    <h1>Program for If Statement</h1>
+    <p>i want to display something using if else</p>
+    <p id="demo7"></p>
+
+    <script>
+      let m;
+      switch (new date().getmonth()) {
+        case 0:
+          m = "jan";
+          break;
+        case 1:
+          m = "feb";
+          break;
+        case 2:
+          m = "march";
+          break;
+        case 3:
+          m = "apr";
+          break;
+        case 4:
+          m = "may";
+          break;
+      }
+      document.getElementById("demo7").innerHTML = m;
+    </script>
+  </body>
+</html>
