@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+    <body>
+        <h1>String_Operations</h1>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+        <script>
+            let str= "there was a cat with five kittens";
+            document.getElementById('demo').innerHTML=str
+            document.getElementById('demo1').innerHTML=str.indexOf("cat");
+            document.getElementById('demo2').innerHTML=str.length
+            document.getElementById('demo3').innerHTML=str.replace("five","three")
+            document.getElementById('demo4').innerHTML=str.toUpperCase()
+            document.getElementById('demo5').innerHTML=str.match("kittens")
+            const strt= "there was a cat with five kittens";
+            document.getElementById('demo6').innerHTML=strt.match("cat")
+        
+
+        </script>
+    </body>
+
+    
+    <body>
+        <p id="demo"></p>
+        <script>
+            function rev(str){
+             return str.split('').reverse().join("");
+            }
+            document.getElementById('demo').innerHTML=rev("hello my name is Ravivarma")
+        </script>
+    </body>
+</html>
